@@ -4,7 +4,6 @@
 #include <set>
 #include <unordered_map>
 #include <vector>
-#include <tuple>
 
 typedef struct person{
     std::set<char> answers;
@@ -25,7 +24,6 @@ std::vector<Group> readInput(std::string filename){
 	Group group;
 
     char c = ' ';
-    int groupCounter = 0;
 	while(std::getline(file, line)){
         Person person;
         if(line.size() == 0){
