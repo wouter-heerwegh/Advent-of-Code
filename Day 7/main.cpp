@@ -44,6 +44,7 @@ std::unordered_map<std::string, Bag> readInput(std::string filename)
             std::string color(buffer);
             color = color.substr(0, color.find(" bag"));
             bag.canContain.insert(std::make_pair(color, amount));
+            free(buffer);
         }
 
         bags.insert(std::make_pair(bag.color, bag));

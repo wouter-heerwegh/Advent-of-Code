@@ -94,8 +94,6 @@ std::vector<Passport> readInput(std::string filename)
 			continue;
 		}
 
-		char *buffer = (char *)malloc(200 * sizeof(char));
-
 		for (std::string field : fields)
 		{
 			find(field, line, pass);

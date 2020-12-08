@@ -63,6 +63,7 @@ std::vector<Password> readInput(std::string filename){
         std::sscanf(line.c_str(), "%d-%d %c: %s", &pass.min, &pass.max, &pass.character, buffer);
 		pass.password = buffer;
 		passwords.push_back(pass);
+		free(buffer);
     }
 
 	file.close();
