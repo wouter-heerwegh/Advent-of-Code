@@ -33,7 +33,6 @@ std::vector<Operation> readInput(std::string filename)
 
     char *buffer = (char *)malloc(200 * sizeof(char));
     
-    int counter = 0;
     while (std::getline(file, line))
     {
         Operation op;
