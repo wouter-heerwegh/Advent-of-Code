@@ -40,7 +40,6 @@ std::vector<Direction> readInput(std::string filename)
 	std::ifstream file(filename);
 	std::vector<Direction> dirs;
 	std::string line = "";
-	std::vector<int> adapters;
 
 	while (std::getline(file, line))
 	{
