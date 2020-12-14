@@ -16,7 +16,6 @@ Map readInput(std::string filename) {
     std::ifstream file(filename);
     Map map;
 	std::string line = "";
-    std::vector<int> adapters;
 
     while (std::getline(file, line)) {
 		std::vector<Seat> row;

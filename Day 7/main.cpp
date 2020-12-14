@@ -48,11 +48,6 @@ std::unordered_map<std::string, Bag> readInput(std::string filename)
         }
 
         bags.insert(std::make_pair(bag.color, bag));
-
-        /*counter++;
-        if(counter == 3){
-            break;
-        }*/
     }
 
     file.close();
@@ -85,7 +80,6 @@ int calculateAllPossibleSolutions2(std::string color, std::unordered_map<std::st
     int nrOfBags = 0;
     for(auto & possible: bags[color].canContain){
         nrOfBags += possible.second * calculateAllPossibleSolutions2(possible.first, bags);
-        std::cout << possible.first << ", " << nrOfBags << ", " << std::endl;
     }
     
     return ++nrOfBags;
